@@ -1,0 +1,106 @@
+.container {
+  width: 80%;
+  margin: 1% 10%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+
+.left {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  margin-right: 10px;
+
+}
+.title{
+  z-index: 0;
+  font-size: 20em;
+  flex-wrap: wrap;
+  color: rgba(255, 255, 255, 0.336);
+  margin: 0;
+  padding: 0;
+  position: absolute;
+
+}
+
+.child{
+  align-self: flex-start;
+  display: flex;
+  font-size: 15px;
+  color: azure;
+  justify-content: space-around;
+}
+
+.compTitle {
+  font-size: 30px;
+  color: #ffffff;
+  margin: 5px 0px 10px 0px;
+}
+
+.compRole{
+  margin-right: 20px;
+}
+
+
+.compPara {
+  color: azure;
+  font-size: 17px;
+  
+
+}
+
+.element{
+  height: 50vh;
+  border-top: 1px solid rgba(255,255,255,0.5);
+  border-left : 1px solid rgba(255,255,255,0.5);
+  box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+  border-radius:15px ;
+  backdrop-filter: blur(10px);
+  width: 25vw;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+
+}
+
+.tech{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.ico{
+  padding: 2px;
+  color: #00ffff;
+}
+
+@media screen and (max-width:990px) {
+  .container {
+      flex-direction: column;
+      height: auto;
+      width: 90%;
+      margin: 1% 5%;
+    
+  }
+  .left  {
+      width: 100%;
+      margin-right: 0;
+  }
+  .right{
+      width: 100%;
+      margin-left: 0;
+
+  }
+
+  .element{
+    width: 90vw;
+    height: auto;
+  }
+}
+

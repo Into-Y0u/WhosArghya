@@ -1,0 +1,20 @@
+
+.gap {
+    color: azure;
+    height: 100px;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 800;
+    margin: 50px 0;
+}
+
+
+@media screen and (max-width:720px) {
+    .gap {
+        height: 80px;
+        font-size: 3rem;
+        font-weight: 600;
+        margin: 20px 0;
+    }
+
+}
