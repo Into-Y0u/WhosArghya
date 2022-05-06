@@ -1,5 +1,5 @@
 export default{
-    webName : "Chaity + vivek",
+    webName : "WhosArghya??",
     homepageIntro : " Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem minima dolor tempora facilis a quas eveniet quisquam quos non autem sunt tenetur praesentium harum earum omnis quis, nostrum minus facere dolorem, quasi laudantium officia asperiores velit libero. Quod, ad facilis!",
 
     experi : [
