@@ -4,7 +4,7 @@
     margin: 0 10vw;
     border-radius: 15px;
     height: 70px;
-    padding: 0px 50px;
+    padding: 0px 30px;
 
     border-top: 1px solid rgba(255,255,255,0.5);
     border-left : 1px solid rgba(255,255,255,0.5);
@@ -20,6 +20,7 @@
     top: 0;
     z-index: 999;
     cursor: pointer;
+    /* margin-bottom: 20px; */
 
 }
 
@@ -35,10 +36,10 @@
 }
 
 .callButton .logo {
-    font-size: 3rem;
+    font-size: 30px;
     font-weight: 500;
     color: rgb(255, 255, 255);
-    font-family: 'Cookie', cursive; 
+    /* font-family: 'Cookie', cursive;  */
 }
 
 
@@ -66,6 +67,8 @@
 @media screen and (max-width:1000px) {
     .container {
         margin: 0 5vw;
+        height: 50px;
+        border-radius: 10px;
  
       }
     .item:nth-child(2) {
