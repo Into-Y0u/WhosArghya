@@ -1,6 +1,5 @@
 import styles from "../../styles/Navbar.module.css"
 import { useRouter } from "next/router";
-import db from '../../Database';
 
 const Navbar = () => {
   const router = useRouter();
@@ -8,7 +7,7 @@ const Navbar = () => {
     <div className={styles.container}>
       <div className={styles.item}>
         <div className={styles.callButton}>
-          <a className={styles.logo} onClick={() => router.push('/')} >{db.webName}</a>
+          <a className={styles.logo} onClick={() => router.push('/')} >WhosArghya??</a>
         </div>
       </div>
       <div className={styles.item}>

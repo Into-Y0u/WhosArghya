@@ -1,5 +1,4 @@
 import styles from '../../styles/Home.module.css';
-import db from '../../Database';
 
 const Frontpage = () => {
   return (
@@ -9,7 +8,7 @@ const Frontpage = () => {
             Hi there!!!!
           </h1>
           <p>
-            {db.homepageIntro}
+          A Kolkata based Engineering Student (FY-22) , love to solve and learn new techs 🚀 ; Software engineer in making ... Hope is the KEY
 
           </p>
 
