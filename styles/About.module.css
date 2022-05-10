@@ -54,7 +54,7 @@
     border-top: 1px solid rgba(255,255,255,0.5);
     border-left : 1px solid rgba(255,255,255,0.5);
     box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
-    border-radius:15px ;
+    border-radius:10px ;
     backdrop-filter: blur(10px);
     width: 100%;
     align-items: center;
@@ -83,7 +83,7 @@
     border-top: 1px solid rgba(255,255,255,0.5);
     border-left : 1px solid rgba(255,255,255,0.5);
     box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
-    border-radius:15px ;
+    border-radius:10px ;
     backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
@@ -94,6 +94,12 @@
     font-size: 20px;
     font-family:  cursive; 
   
+}
+.right:hover{
+    box-shadow: 20px 20px 60px rgba(0,0,0,1);
+    backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 0, 0.238);
+    
 }
 
 @media screen and (max-width:990px) {
