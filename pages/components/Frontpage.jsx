@@ -8,8 +8,7 @@ const Frontpage = () => {
             Hi there!!!!
           </h1>
           <p>
-          A Kolkata based Engineering Student (FY-22) , love to solve and learn new techs 🚀 ; Software engineer in making ... Hope is the KEY
-
+          "If a decision is reversible, the biggest risk is moving too slow. If a decision is irreversible, the biggest risk is moving too fast."
           </p>
 
           <a href="content/Arghaydev_Sarkar_Resume.pdf" download>
