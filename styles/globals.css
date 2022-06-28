@@ -6,7 +6,11 @@ body {
   margin: 0;
   font-family: 'Ubuntu', sans-serif;
   background-color: #362421;
+<<<<<<< HEAD
   background-image: url("/content/download.png");
+=======
+  background-image: url("/content/svg1.png");
+>>>>>>> c341238ec22c073a2723625d69ed665c81acf252
   background-attachment: fixed;
   background-size: cover;
   scroll-behavior: smooth;
