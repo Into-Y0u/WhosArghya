@@ -1,5 +1,5 @@
 import styles from '../../styles/Exp.module.css'
-import { Blogger, C, Cplusplus, CssThree, Databricks, Django, Figma, Firebase, Git, Github, Heroku, Html5, Java, Javascript, Json, Kotlin,  Mongodb, Mysql, Netlify, Nextdotjs, Nodedotjs, Postman, Python, ReactJs, Shopify,  Tableau, Vercel, Visualstudiocode, Wix, Wordpress } from "@icons-pack/react-simple-icons";
+import { Blogger, C, Cplusplus, CssThree, Databricks, Django, Figma, Firebase, Git, Github, Heroku, Html5, Java, Javascript, Json, Kotlin,  Linux,  Mongodb, Mysql, Netlify, Nextdotjs, Nodedotjs, Postman, Python, ReactJs, Shopify,  Tableau, Vercel, Visualstudiocode, Wix, Wordpress } from "@icons-pack/react-simple-icons";
 
 import React from 'react'
 
@@ -11,7 +11,7 @@ const Exp = () => {
             <h2 className={styles.compTitle}>Cognizant Technology Solutions, India. </h2>
             <div className={styles.child}>
               <div className={styles.compRole}>Programmer Analyst Traninee Intern</div>
-              <div className={styles.compRole}>Feb 2022 - Present</div>
+              <div className={styles.compRole}>Feb 2022 - May 2022</div>
             </div>
             <div>
               <p className={styles.compPara}>Joined Cognizant as an Intern in CDB Database Visualisation and Normalisation Domain. Mostly Data Organise and Data analysis related training we have got here. Learnt a lot abut industry level softwares and works. 
@@ -22,7 +22,7 @@ const Exp = () => {
             <h2 className={styles.compTitle}>Tutorial Cup </h2>
             <div className={styles.child}>
               <div className={styles.compRole}>Technical Content Writer           </div>
-              <div className={styles.compRole}>April 2022 - Present</div>
+              <div className={styles.compRole}>April 2022 - May 2022</div>
             </div>
             <div>
               <p className={styles.compPara}>Technical Content Writing, Mostly Leetcode solve and explanation writing. I am comfortable with Python on solving leetcode. But I am learing Java for this , As at least 2 language explanantion/solve is mandatory here.
@@ -93,6 +93,7 @@ const Exp = () => {
           <div className={styles.skillset} >
             <div className={styles.skills} >
               <Tableau color="#ffffff"  size={40} className={styles.ico} />
+              <Linux color="#ffffff"  size={40} className={styles.ico} />
   
             </div>
           </div>

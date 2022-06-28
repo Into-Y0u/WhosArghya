@@ -1,5 +1,5 @@
 import styles from '../../styles/Project.module.css'
-import {  CssThree, Django,  Firebase, Firefox, Github,  Html5, Javascript, Materialui,  Netlify, Nextdotjs, Python, ReactJs, Themoviedatabase, Vercel, Wordpress } from "@icons-pack/react-simple-icons";
+import {  Arduino, C, CssThree, Django,  Firebase, Firefox, Github,  Html5, Javascript, Materialui,  Netlify, Nextdotjs, Python, ReactJs, Stripe, Themoviedatabase, Vercel, Wordpress } from "@icons-pack/react-simple-icons";
 import Link from 'next/link';
 
 
@@ -7,6 +7,65 @@ const Projects = () => {
   return (
     <div className={styles.container}>
         <div className={styles.left}>
+        {/* part -1  */}
+          <div  className={styles.element}>
+            <h2 className={styles.compTitle}>
+              <Link href="https://boat-clone-eta.vercel.app/" passHref>
+                <a target="_blank">boAt-Clone</a>
+              </Link>
+            </h2>
+            <div className={styles.tech} > 
+              <Nextdotjs color="#00ffff"  size={30} className={styles.ico}/>
+              <Javascript color="#00ffff"  size={30} className={styles.ico}/>
+              <Stripe color="#00ffff"  size={30} className={styles.ico}/>
+              <CssThree color="#00ffff"  size={30} className={styles.ico}/>
+            </div>
+            <div className={styles.child}>
+              <div className={styles.compRole}>
+                <Link href="https://github.com/Into-Y0u/boAt-Clone" passHref>
+                  <a target="_blank"><Github color="#ffffff"  size={30} className={styles.ico}/></a>
+                </Link>
+              </div>
+              <div className={styles.compRole}>
+                <Link href="https://boat-clone-eta.vercel.app/" passHref>
+                  <a target="_blank"><Firefox color="#f2f924"  size={30} className={styles.ico}/></a>
+                </Link>
+              </div>
+            </div>
+            <div>
+              <p className={styles.compPara}>
+              Boat Clone is Ecommerce Web app similar to leading lifestyles Unicorn boat-lifestyle <br /> built using Next.Js framework , Sanity at the backend  and Stripe for payment gateway .
+              </p>
+            </div>
+          </div>
+        {/* part -1 ends */}
+
+        {/* part 0  */}
+          <div  className={styles.element}>
+            <h2 className={styles.compTitle}>
+              <Link href="https://github.com/Into-Y0u/Anti-Collision-EV-Tech" passHref>
+                <a target="_blank">Anti-Collision EV-Tech</a>
+              </Link>
+            </h2>
+            <div className={styles.tech} > 
+              <C color="#00ffff"  size={30} className={styles.ico}/>
+              <Arduino color="#00ffff"  size={30} className={styles.ico}/>
+            </div>
+            <div className={styles.child}>
+              <div className={styles.compRole}>
+                <Link href="https://github.com/Into-Y0u/Anti-Collision-EV-Tech" passHref>
+                  <a target="_blank"><Github color="#ffffff"  size={30} className={styles.ico}/></a>
+                </Link>
+              </div>
+            </div>
+            <div>
+              <p className={styles.compPara}>
+              Obstackle detection and speed control of vechile in motion to avoid accident and collision.
+              </p>
+            </div>
+          </div>
+        {/* part 0 ends */}
+
         {/* part1  */}
           <div  className={styles.element}>
             <h2 className={styles.compTitle}>
