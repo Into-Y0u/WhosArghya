@@ -8,6 +8,19 @@ const Exp = () => {
     <div className={styles.container}>
         <div className={styles.left}>
           <div  className={styles.element}>
+            <h2 className={styles.compTitle}>Zoho Corporation, India. </h2>
+            <div className={styles.child}>
+              <div className={styles.compRole}>Member of Technical Staff</div>
+              <div className={styles.compRole}>Aug 2022 - Present</div>
+            </div>
+            <div>
+              <p className={styles.compPara}>Working in Backend on Product "Zoho Video Platform" 
+              </p>
+            </div>
+          </div>
+          
+
+          <div  className={styles.element}>
             <h2 className={styles.compTitle}>Cognizant Technology Solutions, India. </h2>
             <div className={styles.child}>
               <div className={styles.compRole}>Programmer Analyst Traninee Intern</div>
