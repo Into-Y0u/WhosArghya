@@ -11,7 +11,7 @@ const About = () => {
               <div className={styles.compTimeline}>August 2018 - July 2022</div>
             </div>
             <div className={styles.child}>
-              <div className={styles.compRole} style ={{fontSize:"15px"}} >CGPA : 8.89 (till 7th sem)</div>
+              <div className={styles.compRole} style ={{fontSize:"15px"}} >CGPA : 8.80</div>
             </div>
           </div>
           <div  className={styles.element}>
