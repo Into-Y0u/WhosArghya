@@ -8,7 +8,7 @@ const Exp = () => {
     <div className={styles.container}>
         <div className={styles.left}>
           <div  className={styles.element}>
-            <h2 className={styles.compTitle}>Zoho Corporation, India. </h2>
+            <h2 className={styles.compTitle}>Zoho Corporation Pvt. Ltd, India. </h2>
             <div className={styles.child}>
               <div className={styles.compRole}>Member of Technical Staff</div>
               <div className={styles.compRole}>Aug 2022 - Present</div>
@@ -30,20 +30,7 @@ const Exp = () => {
               <p className={styles.compPara}>Joined Cognizant as an Intern in CDB Database Visualisation and Normalisation Domain. Mostly Data Organise and Data analysis related training we have got here. Learnt a lot abut industry level softwares and works. 
               </p>
             </div>
-          </div>
-          <div  className={styles.element}>
-            <h2 className={styles.compTitle}>Tutorial Cup </h2>
-            <div className={styles.child}>
-              <div className={styles.compRole}>Technical Content Writer           </div>
-              <div className={styles.compRole}>April 2022 - May 2022</div>
-            </div>
-            <div>
-              <p className={styles.compPara}>Technical Content Writing, Mostly Leetcode solve and explanation writing. I am comfortable with Python on solving leetcode. But I am learing Java for this , As at least 2 language explanantion/solve is mandatory here.
-              </p>
-            </div>
-          </div>
-
-       
+          </div>  
         </div>
 
 

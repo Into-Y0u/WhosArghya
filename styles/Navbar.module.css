@@ -2,16 +2,11 @@
 
 .container {
     margin: 0 10vw;
-    border-radius: 15px;
     height: 70px;
     padding: 0px 30px;
-
-    border-top: 1px solid rgba(255,255,255,0.5);
-    border-left : 1px solid rgba(255,255,255,0.5);
-    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
-    border-radius:12px ;
-    backdrop-filter: blur(15px);
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: linear-gradient(145deg, #2e2e2e, #373737);
+    box-shadow:  35px 35px 70px #161616,
+                 -35px -35px 70px #505050;
 
     display: flex;
     align-items: center;

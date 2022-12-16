@@ -15,7 +15,7 @@ const Navbar = () => {
           <li className={styles.listItem} onClick={() => router.push('/')} >Home</li>
           <li className={styles.listItem} onClick={() => router.push('/exppage')}  >Skills/Exps</li>
           <li className={styles.listItem} onClick={() => router.push('/projectspage')} >Projects</li>
-          <li className={styles.listItem} onClick={() => router.push('/aboutpage')} >Abouts</li>
+          <li className={styles.listItem} onClick={() => router.push('/memes')} >Abouts</li>
           <li className={styles.listItem} onClick={() => router.push('/contactpage')} >Contacts</li>
 
         </div>
