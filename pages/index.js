@@ -3,6 +3,7 @@ import About from './components/About';
 import Exp from './components/Exp';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
+import APOD from './components/APOD';
 import styles from '../styles/Front.module.css';
 
 
@@ -11,6 +12,10 @@ export default function Home() {
   return (
     <>
       <Frontpage/>
+      <div className={styles.gap} >
+        NASA APOD
+      </div>
+      <APOD/>
       <div className={styles.gap} >
         Exp and Skills
       </div>
