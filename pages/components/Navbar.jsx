@@ -1,5 +1,7 @@
 import styles from "../../styles/Navbar.module.css"
 import { useRouter } from "next/router";
+// import Button from React;
+import React from "react";
 
 const Navbar = () => {
   const router = useRouter();
@@ -14,7 +16,8 @@ const Navbar = () => {
         <div className={styles.list}>
           <li className={styles.listItem} onClick={() => router.push('/')} >Home</li>
           <li className={styles.listItem} onClick={() => router.push('/exppage')}  >Skills/Exps</li>
-          <li className={styles.listItem} onClick={() => router.push('/projectspage')} >Projects</li>
+          {/* <li className={styles.listItem} onClick={() => router.push('/projectspage') } >Projects</li> */}
+          <li className={styles.listItem} onClick={() => router.push('/projectspage') } >Projects</li>
           <li className={styles.listItem} onClick={() => router.push('/memes')} >Abouts</li>
           <li className={styles.listItem} onClick={() => router.push('/contactpage')} >Contacts</li>
 

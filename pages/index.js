@@ -15,7 +15,7 @@ export default function Home() {
         Exp and Skills
       </div>
       <Exp/>
-      <div className={styles.gap} >
+      <div className={styles.gap} id="gridWrapper">
         Projects
       </div>
       <Projects/>
