@@ -27,7 +27,7 @@ const Exp = () => {
                     <div className={styles.compLoc}>Chennai, In</div>
                     <div className={styles.compRole}>Aug 2022 - Present</div>
                   </div>
-                  <h3 className={styles.compRole}   >Member Technical Staff</h3>
+                  <h3 className={styles.compRole}>Member Technical Staff</h3>
                 </div>
               </div>
 
