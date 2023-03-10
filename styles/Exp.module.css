@@ -13,7 +13,8 @@
     width: 50%;
     display: flex;
     flex-direction: column;
-    margin-right: 10px;
+    /* margin-right: 10px; */
+    margin-left: 10px;
   
 }
 
@@ -26,7 +27,9 @@
     color: azure;
 }
 .compTitle {
-    font-size: 28px;
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
     color: azure;
     align-self: flex-start;
     padding: 5px 0;
@@ -52,19 +55,13 @@
 .compPara {
     font-size: 17px;
     color: azure;
-    
+    margin: 0;
+    padding: 0;
 
 }
   
 .element{
     height: auto;
-    background-image: url("../public/content/Zoho_Corporation-Logo.png") ;
-    /* background: linear-gradient(145deg, #2e2e2e, #373737), url("../public/content/Zoho_Corporation-Logo.png"); */
-    box-shadow:  35px 35px 70px #161616,
-                 -35px -35px 70px #505050;
-
-    /* opacity: 0.5; */
-    
     background-position: top right;
 	background-repeat: no-repeat;
 	background-size: 30%;
@@ -73,10 +70,41 @@
     display: flex;
     flex-direction: column;
     margin-right: 10px;
-    padding: 10px;
+    padding: 20px;
     margin-bottom: 20px;
+    border-radius: 0px;
+    background: linear-gradient(145deg, #373737, #2e2e2e);
+    box-shadow:  35px 35px 70px #161616,
+                 -35px -35px 70px #505050;
 
 }
+
+.intro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.intro img{
+    border : 2px solid white;
+}
+
+.imgBunch{
+    width: 30%;
+
+}
+
+.imgBunch img{
+    width: 100%;
+}
+
+.titleBunch{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+
 .element:hover{
     /* border-radius: 0px;
     background: linear-gradient(145deg, #373737, #2e2e2e);
@@ -85,25 +113,34 @@
     
 }
 
-.skillset:hover{
+/* .skillset:hover{
     border-radius: 0px;
     background: linear-gradient(145deg, #373737, #2e2e2e);
     box-shadow:  35px 35px 70px #161616,
                  -35px -35px 70px #505050;
 
     
+} */
+  
+
+.moreFalse{
+    display: none;
 }
-  
-  
+
+.moreTrue{
+    border: 2px solid white;
+}
+
 .right{
     height: auto;
     width: 50%;
     display: flex;
     flex-direction: column;
-    margin-left: 10px;
-  
+    margin-right: 10px;
+    border: 1px solid white;
 }
-.skills{
+
+/* .skills{
     display: flex;
     flex-wrap: wrap; 
 
@@ -123,7 +160,7 @@
 .ico{
     margin: 0 5px ;
     padding: 5px;
-}
+} */
 
 @media screen and (max-width:640px) {
     .container {

@@ -5,15 +5,22 @@ import styles from '../../styles/APOD.module.css';
 
 
 const APOD = () => {
-	const [data, setData] = useState(null);
+	// const [data, setData] = useState(null);
+  const [pic, setPic] = useState("");
+  const [title, setTitle] = useState("")
+  const [desc, setDesc] = useState("")
+  const [date, setDate] = useState("")
+
 	const fetchData = async () => {	
-    axios.get(`https://api.nasa.gov/planetary/apod?api_key=${process.env.NASA_API_KEY}`)
+    axios.get(`https://api.nasa.gov/planetary/apod?api_key=g2SE3zMqKGOohHR8XgRuxx0j2p6xzrKfcGYQE3fn`)
     .then((response) => {
       var fetchedData = response.data;
-      console.log(fetchedData + " => " + typeof(fetchedData));
-      setData(fetchedData);
-      localStorage.setItem("LandingPage_data" , fetchedData);
-      localStorage.setItem("LandingPage_time" , Date.now());
+      setDate(fetchedData.date);
+      setPic(fetchedData.hdurl);
+      setTitle(fetchedData.title);
+      setDesc(fetchedData.explanation);
+      console.log( JSON.stringify(fetchedData));
+      
     })
     .catch((err)=>{
         console.log(" cant get requ")
@@ -23,24 +30,25 @@ const APOD = () => {
 	};
 
   useEffect(() => {
-    if(localStorage.getItem("LandingPage_data")){
-      var data = localStorage.getItem("LandingPage_data");
-      setData(data);
-    }
-    else{
+    // if(localStorage.getItem("LandingPage_data")){
+    //   var data = localStorage.getItem("LandingPage_data");
+    //   setData(data);
+    // }
+    // else{
       fetchData();
-    }
+    // }
     // localStorage.clear();
 },[]);
 	return (
 		<div className={styles.container}>
-            <div  className={styles.left}>
-                {/* {console.log("dtaa is :" + data)}
-                <img src={data.hdurl} alt="" /> */}
+            <div className={styles.left}>
+              <img src={pic} alt="" />
             </div>
 
             <div className={styles.right}>
-
+              <h1>{title}</h1>
+              <h3>{date}</h3>
+              <p>{desc}</p>
             </div>
             
 		</div>

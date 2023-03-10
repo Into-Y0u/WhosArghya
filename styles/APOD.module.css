@@ -23,8 +23,24 @@
   
 }
 
+.left img{
+    width: 100%;
+}
+
 .right{
     width: 50%;
     padding: 20px;
   
+}
+
+.right h1{
+    color: white;
+}
+
+.right h3{
+    color: white;
+}
+
+.right p{
+    color: white;
 }
