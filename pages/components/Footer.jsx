@@ -1,15 +1,17 @@
-import React from 'react'
 import styles from "../../styles/Footer.module.css"
+import { useRouter } from "next/router";
 
 const Footer = () => {
+  const router = useRouter();
   return (
     <div className={styles.container}>
-      <h2 className={styles.text}>
-        Made by Arghya with 💕
-      </h2>
-        
+      <div className={styles.item}>
+        From Arghya With Love
+      </div>
+  
+
     </div>
   )
 }
 
-export default Footer
+export default Footer;

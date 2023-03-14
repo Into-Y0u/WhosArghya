@@ -7,7 +7,7 @@ const Frontpage = () => {
           <h1>
             Hi there!!!!
           </h1>
-          <p>"If a decision is reversible, the biggest risk is moving too slow. If a decision is irreversible, the biggest risk is moving too fast."</p>
+          <p   >"If a decision is reversible, the biggest risk is moving too slow. If a decision is irreversible, the biggest risk is moving too fast."</p>
           <a href= "content/Arghyadev_Sarkar_Resume.pdf" download>
               <button>
                   <div>

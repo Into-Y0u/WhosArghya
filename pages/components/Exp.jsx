@@ -21,31 +21,36 @@ const Exp = () => {
                 <div className={styles.imgBunch} >
                   <img src="content/zoho.png" alt="gu" />
                 </div>
+
                 <div className={styles.titleBunch}   >
                   <h2 className={styles.compTitle}>Zoho Corporation Pvt. Ltd.</h2>
                   <div className={styles.child}>
-                    <div className={styles.compLoc}>Chennai, In</div>
+                    <div className={styles.compRole}>Chennai, In</div>
                     <div className={styles.compRole}>Aug 2022 - Present</div>
                   </div>
-                  <h3 className={styles.compRole}>Member Technical Staff</h3>
+                  <h3 className={styles.compRole2}>Member Technical Staff (Backend Dev)</h3>
                 </div>
+
               </div>
 
-              <div>
+              <div className={styles.description}  >
                 <p className={styles.compPara}>Working in Backend on Product "Zoho Video Platform" 
                 </p>
-                <button onClick={handleToggle} >Click for more</button>
-                <ul className={cur ? styles.moreTrue : styles.moreFalse}  >
-                  <li>
-                    ahbdsabid 1
-                  </li>
-                  <li>
-                    ahbdsabid 2
-                  </li>
-                  <li>
-                    ahbdsabid 3
-                  </li>
-                </ul>
+                <div className={cur ? styles.butList : styles.butListRev}>
+                  <button onClick={handleToggle} className={styles.but} >{cur ? "Show Less" : "Show More"}</button>
+                  <ul className={cur ? styles.moreTrue : styles.moreFalse}  >
+                    <li>
+                      ahbdsabid 1
+                    </li>
+                    <li>
+                      ahbdsabid 2
+                    </li>
+                    <li>
+                      ahbdsabid 3
+                    </li>
+                  </ul>
+
+                </div>
               </div>
             </div>
           </div>

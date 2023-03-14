@@ -1,7 +1,8 @@
 import Frontpage from './components/Frontpage';
 import About from './components/About';
+import Skills from './components/Skills';
 import Exp from './components/Exp';
-import Contact from './components/Contact';
+import Sidebar from './components/Sidebar';
 import Projects from './components/Projects';
 import APOD from './components/APOD';
 import styles from '../styles/Front.module.css';
@@ -10,28 +11,36 @@ import styles from '../styles/Front.module.css';
 
 export default function Home() {
   return (
-    <>
-      <Frontpage/>
-      <div className={styles.gap} >
-        NASA APOD
+    <div className={styles.container}>
+      <div className={styles.sidebar}>
+        <Sidebar/>
       </div>
-      <APOD/>
-      <div className={styles.gap} >
-        Exp and Skills
+      <div className={styles.mainContent}  >
+        <Frontpage/>
+        <div className={styles.gap} >
+          NASA APOD
+        </div>
+        <APOD/>
+        <div className={styles.gap} >
+          Experience
+        </div>
+        <Exp/>
+        <div className={styles.gap} >
+          Skills
+        </div>
+        <Skills/>
+        <div className={styles.gap} >
+          Projects
+        </div>
+        <Projects/>
+        <div className={styles.gap} >
+          Abouts
+        </div>
+        <About/>
       </div>
-      <Exp/>
-      <div className={styles.gap} >
-        Projects
+      <div className={styles.sidebar}>
+        <Sidebar/>
       </div>
-      <Projects/>
-      <div className={styles.gap} >
-        Abouts
-      </div>
-      <About/>
-      <div className={styles.gap} >
-        Contact Me
-      </div>
-      <Contact/>
-    </>
+    </div>
   )
 }

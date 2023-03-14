@@ -1,8 +1,7 @@
 .container {
   height: auto;
-  width: 80%;
   padding: 20px;
-  margin: 2% 10%;
+  margin: 2vw 0;
   background: linear-gradient(145deg, #2e2e2e, #373737);
   box-shadow:  35px 35px 70px #161616,
                -35px -35px 70px #505050;
@@ -18,8 +17,10 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  border: 2px solid white;
   margin: 20px;
+  background: linear-gradient(145deg, #2e2e2e, #373737);
+  box-shadow:  35px 35px 70px #161616,
+               -35px -35px 70px #505050;
 
 }
 .left h1 {
