@@ -1,6 +1,6 @@
 .container {
     height: auto;
-    width: 80%;
+    /* width: 80%; */
     padding: 20px;
     margin: 2% 10%;
     background: linear-gradient(145deg, #2e2e2e, #373737);
@@ -14,13 +14,18 @@
 
 .left {
     width: 50%;
-    padding: 30px;
+    padding: 10px;
     align-items: center;
     display: flex;
     flex-direction: column;
-    border: 2px solid white;
+    border: 5px solid white;
     margin: 20px;
-  
+    transition: transform .2s;
+}
+.left:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.1);
 }
 
 .left img{
@@ -30,7 +35,7 @@
 .right{
     width: 50%;
     padding: 20px;
-  
+    text-align: center;
 }
 
 .right h1{
@@ -43,4 +48,16 @@
 
 .right p{
     color: white;
+}
+
+.right button{
+    margin-top: 50px;
+    height: 50px;
+    
+    width: auto;
+}
+
+.right button a {
+    padding: 10px;
+    margin: 20px;
 }

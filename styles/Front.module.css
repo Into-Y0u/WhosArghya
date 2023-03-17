@@ -1,4 +1,16 @@
 
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar{
+    width: 40%;
+    position: sticky;
+    height: 500px;
+    top: calc(25vh);
+}
+
 .gap {
     color: azure;
     height: 200px;

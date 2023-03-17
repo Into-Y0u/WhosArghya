@@ -13,11 +13,10 @@ const Navbar = () => {
       <div className={styles.item}>
         <div className={styles.list}>
           <li className={styles.listItem} onClick={() => router.push('/')} >Home</li>
-          <li className={styles.listItem} onClick={() => router.push('/exppage')}  >Skills/Exps</li>
+          <li className={styles.listItem} onClick={() => router.push('/apod')} >Apod</li>
+          <li className={styles.listItem} onClick={() => router.push('/exppage')}  >Experince</li>
+          <li className={styles.listItem} onClick={() => router.push('/skills')}  >Skills</li>
           <li className={styles.listItem} onClick={() => router.push('/projectspage')} >Projects</li>
-          <li className={styles.listItem} onClick={() => router.push('/memes')} >Abouts</li>
-          <li className={styles.listItem} onClick={() => router.push('/contactpage')} >Contacts</li>
-
         </div>
       </div>
   
