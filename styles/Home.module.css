@@ -1,7 +1,7 @@
 .container {
   height: auto;
   padding: 20px;
-  margin: 2vw 0;
+  margin: 2vw 10vw;
   background: linear-gradient(145deg, #2e2e2e, #373737);
   box-shadow:  35px 35px 70px #161616,
                -35px -35px 70px #505050;
@@ -23,7 +23,7 @@
                -35px -35px 70px #505050;
 
 }
-.left h1 {
+.left h2 {
   color: white;
   font-size: 2rem;
   flex-wrap: wrap;

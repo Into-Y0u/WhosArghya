@@ -26,7 +26,7 @@ const Projects = () => {
                   <a target="_blank"><Github color="#ffffff"  size={30} className={styles.ico}/></a>
                 </Link>
               </div>
-              <div className={styles.compRole}>
+              <div className={styles.compRole} >
                 <Link href="https://boat-clone-eta.vercel.app/" passHref>
                   <a target="_blank"><Firefox color="#f2f924"  size={30} className={styles.ico}/></a>
                 </Link>

@@ -1,6 +1,6 @@
 .container {
   /* width: 80%; */
-  margin: 1% 0%;
+  margin: 2% 10%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -29,12 +29,13 @@
 }
 
 .child{
-  align-self: flex-start;
+  /* align-self: flex-start; */
   display: flex;
   font-size: 15px;
   color:azure;
-  justify-content: space-around;
+  flex-direction: row;
   margin-top: 10px;
+  width: 100%;
 }
 
 .compTitle {
@@ -49,7 +50,7 @@
 .compRole{
   font-size: 18px;
   margin-right: 1vw;
-  align-items: flex-start;
+  align-items: flex-end;
 }
 
 .compTimeline{
