@@ -8,7 +8,7 @@ const APOD = () => {
   const [pic, setPic] = useState("");
   const [title, setTitle] = useState("")
   const [desc, setDesc] = useState("")
-  const [date, setDate] = useState("")
+  const [date, setDate] = useState("");
 
 
 	const fetchData = async () => {	
@@ -21,7 +21,6 @@ const APOD = () => {
       setDesc(fetchedData.explanation);
     })
     .catch((err)=>{
-        console.log(" cant get requ")
       console.log(err);
     })
 
