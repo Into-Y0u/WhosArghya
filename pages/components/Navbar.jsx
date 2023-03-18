@@ -1,5 +1,7 @@
 import styles from "../../styles/Navbar.module.css"
 import { useRouter } from "next/router";
+import {  Arduino, C, CssThree, Django,  Expertsexchange,  Expressvpn,  Firebase, Firefox, Github,  Homeadvisor,  Html5, Javascript, Materialui,  Netlify, Nextdotjs, Python, Qubesos, Quest, ReactJs, Skillshare, Skyliner, Socketdotio, Stripe, Themoviedatabase, Vercel, Wordpress } from "@icons-pack/react-simple-icons";
+import Link from 'next/link';
 
 const Navbar = () => {
   const router = useRouter();
@@ -12,11 +14,11 @@ const Navbar = () => {
       </div>
       <div className={styles.item}>
         <div className={styles.list}>
-          <li className={styles.listItem} onClick={() => router.push('/')} >Home</li>
-          <li className={styles.listItem} onClick={() => router.push('/apod')} >Apod</li>
-          <li className={styles.listItem} onClick={() => router.push('/exppage')}  >Experince</li>
-          <li className={styles.listItem} onClick={() => router.push('/skills')}  >Skills</li>
-          <li className={styles.listItem} onClick={() => router.push('/projectspage')} >Projects</li>
+          <li className={styles.listItem} onClick={() => router.push('/')}><Homeadvisor color="#00ffff"  size={30} className={styles.ico}/> </li>
+          <li className={styles.listItem} onClick={() => router.push('/apod')} ><Qubesos color="#00ffff"  size={30} className={styles.ico}/> </li>
+          <li className={styles.listItem} onClick={() => router.push('/exppage')}  ><Expressvpn color="#00ffff"  size={30} className={styles.ico}/> </li>
+          <li className={styles.listItem} onClick={() => router.push('/skills')}  ><Expertsexchange color="#00ffff"  size={30} className={styles.ico}/> </li>
+          <li className={styles.listItem} onClick={() => router.push('/projectspage')} ><Skyliner color="#00ffff"  size={30} className={styles.ico}/> </li>
         </div>
       </div>
   

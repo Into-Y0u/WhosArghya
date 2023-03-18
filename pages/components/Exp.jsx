@@ -71,8 +71,8 @@ optimize the space .
             <div  className={styles.element}>
 
               <div className={styles.intro} >
-                <div className={styles.imgBunch} style={{"width":"16%" , "paddingTop":"15px"}} >
-                  <img src="content/cognizant.png" alt="gu" />
+                <div className={styles.imgBunch} >
+                  <img src="content/3.png" alt="gu" />
                 </div>
 
                 <div className={styles.titleBunch}   >
@@ -86,7 +86,7 @@ optimize the space .
 
               </div>
 
-              <div className={styles.description} style={{ "paddingTop":"20px"}} >
+              <div className={styles.description} >
                 <p className={styles.compPara}>
                   Worked as an Intern under the offer of Programming Analyst Traniee.
                 </p>
