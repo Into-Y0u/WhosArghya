@@ -63,10 +63,12 @@
     .container {
         margin: 0 5vw;
         height: 50px;
-        border-radius: 10px;
- 
       }
     .item:nth-child(2) {
         display: none;
+    }
+    .callButton .logo {
+        font-size: 25px;
+        font-weight: 300;
     }
 }
