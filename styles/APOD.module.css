@@ -61,3 +61,19 @@
     padding: 10px;
     margin: 20px;
 }
+
+@media screen and (max-width:640px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin:1% 5%;
+    }
+    .left{
+        width: 90%;
+    }
+
+    .right{
+        width: 100%;
+    }
+    
+}
