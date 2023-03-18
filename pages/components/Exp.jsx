@@ -1,125 +1,116 @@
 import styles from '../../styles/Exp.module.css'
-import { Blogger, C, Cplusplus, CssThree, Databricks, Django, Figma, Firebase, Git, Github, Heroku, Html5, Java, Javascript, Json, Kotlin,  Linux,  Mongodb, Mysql, Netlify, Nextdotjs, Nodedotjs, Postman, Python, ReactJs, Shopify,  Tableau, Vercel, Visualstudiocode, Wix, Wordpress } from "@icons-pack/react-simple-icons";
 
-import React from 'react'
+
+import {useState} from 'react';
 
 const Exp = () => {
+  const [cur1, setCur1] = useState(false);
+  const [cur2, setCur2] = useState(false);
+
+  const handleToggle1 = () => {
+    setCur1(cur1 => !cur1);
+  }
+
+  const handleToggle2 = () => {
+    setCur2(cur2 => !cur2);
+  }
+
   return (
-    <div className={styles.container}>
-        <div className={styles.left}>
-          <div  className={styles.element}>
-            <h2 className={styles.compTitle}>Zoho Corporation, India. </h2>
-            <div className={styles.child}>
-              <div className={styles.compRole}>Member of Technical Staff</div>
-              <div className={styles.compRole}>Aug 2022 - Present</div>
-            </div>
-            <div>
-              <p className={styles.compPara}>Working in Backend on Product "Zoho Video Platform" 
-              </p>
+      <div className={styles.container}>
+          <div className={styles.left}>
+  {/* Company details  */}
+            <div  className={styles.element}>
+
+              <div className={styles.intro} >
+                <div className={styles.imgBunch} >
+                  <img src="content/zoho.png" alt="gu" />
+                </div>
+
+                <div className={styles.titleBunch}   >
+                  <h2 className={styles.compTitle}>Zoho Corporation Pvt. Ltd.</h2>
+                  <div className={styles.child}>
+                    <div className={styles.compRole}>Chennai, In</div>
+                    <div className={styles.compRole}>Aug 2022 - Present</div>
+                  </div>
+                  <h3 className={styles.compRole2}>Member Technical Staff (Backend Dev)</h3>
+                </div>
+
+              </div>
+
+              <div className={styles.description}  >
+                <p className={styles.compPara}>Technologies : Core Java, Struts 2 and Backend Operations ; Team - Zoho Video Platform. 
+                </p>
+                <div className={cur1 ? styles.butList : styles.butListRev}>
+                  <button onClick={handleToggle1} className={styles.but} >{cur1 ? "Show Less" : "Show More"}</button>
+                  <ul className={cur1 ? styles.moreTrue : styles.moreFalse}  >
+                    <li>
+                    Wrote and Integrated 5 new APIs to implement the newest feature “Waiting Room” in the
+conference that accepts requests from the joiners and notify host/co host to join in ; Handles
+them on the server end and executes DB operations as per use cases .
+                    </li>
+                    <li>
+                    Fixed issue of pre-call making anomaly and improved unauthorized call detection system,
+speeded up the reaction 90% faster.
+                    </li>
+                    <li>
+                    Designed and developed an API for the service team to fetch the details of all participants of an
+ongoing or any previously occurred conference.
+                    </li>
+                    <li>
+                    Improved system to delete "unnecessary" data from DB periodically to free up the load and
+optimize the space .
+                    </li>
+                  </ul>
+
+                </div>
+              </div>
             </div>
           </div>
-          
 
-          <div  className={styles.element}>
-            <h2 className={styles.compTitle}>Cognizant Technology Solutions, India. </h2>
-            <div className={styles.child}>
-              <div className={styles.compRole}>Programmer Analyst Traninee Intern</div>
-              <div className={styles.compRole}>Feb 2022 - May 2022</div>
+          <div className={styles.right} >
+            <div  className={styles.element}>
+
+              <div className={styles.intro} >
+                <div className={styles.imgBunch} style={{"width":"16%" , "paddingTop":"15px"}} >
+                  <img src="content/cognizant.png" alt="gu" />
+                </div>
+
+                <div className={styles.titleBunch}   >
+                  <h2 className={styles.compTitle}>Cognizant</h2>
+                  <div className={styles.child}>
+                    <div className={styles.compRole}>Kolkata, In</div>
+                    <div className={styles.compRole}>Feb 2022 - May 2022</div>
+                  </div>
+                  <h3 className={styles.compRole2}>PAT Intern (Database Vis & Normalization)</h3>
+                </div>
+
+              </div>
+
+              <div className={styles.description} style={{ "paddingTop":"20px"}} >
+                <p className={styles.compPara}>
+                  Worked as an Intern under the offer of Programming Analyst Traniee.
+                </p>
+                <div className={cur2 ? styles.butList : styles.butListRev}>
+                  <button onClick={handleToggle2} className={styles.but} >{cur2 ? "Show Less" : "Show More"}</button>
+                  <ul className={cur2 ? styles.moreTrue : styles.moreFalse}  >
+                    <li>
+                    Domain : Database Visualization and Normalization (Cohort Topper : ICT score : 88% and descent
+confederate with elocution).
+                    </li>
+                    <li>
+                    Trained on Database Management System , Data Modeling ; Tech Stack learnt : MySql, Data
+Analysis and Visualization tools : QlikView, Tableau.
+                    </li>
+                  </ul>
+
+                </div>
+              </div>
             </div>
-            <div>
-              <p className={styles.compPara}>Joined Cognizant as an Intern in CDB Database Visualisation and Normalisation Domain. Mostly Data Organise and Data analysis related training we have got here. Learnt a lot abut industry level softwares and works. 
-              </p>
-            </div>
+
           </div>
-          <div  className={styles.element}>
-            <h2 className={styles.compTitle}>Tutorial Cup </h2>
-            <div className={styles.child}>
-              <div className={styles.compRole}>Technical Content Writer           </div>
-              <div className={styles.compRole}>April 2022 - May 2022</div>
-            </div>
-            <div>
-              <p className={styles.compPara}>Technical Content Writing, Mostly Leetcode solve and explanation writing. I am comfortable with Python on solving leetcode. But I am learing Java for this , As at least 2 language explanantion/solve is mandatory here.
-              </p>
-            </div>
-          </div>
-
-       
-        </div>
-
-
-
-
-
-
-
-        <div className={styles.right}>
-          <div className={styles.skillset} >
-            <div className={styles.skills} >
-              <Python color="#ffffff"  size={40} className={styles.ico} />
-              <C color="#ffffff"  size={40} className={styles.ico} />
-              <Javascript color="#ffffff"  size={40} className={styles.ico} />
-              <Cplusplus color="#ffffff"  size={40} className={styles.ico} />
-              <Kotlin color="#ffffff"  size={40} className={styles.ico} />
-              <Java color="#ffffff"  size={40} className={styles.ico} />
-              <Html5 color="#ffffff"  size={40} className={styles.ico} />
-              <CssThree color="#ffffff"  size={40} className={styles.ico} />
-             
-            </div>
-          </div>
-          <div className={styles.skillset} >
-            <div className={styles.skills} >
-              <Mysql color="#ffffff"  size={40} className={styles.ico} />
-              <Databricks color="#ffffff"  size={40} className={styles.ico} />
-              <Mongodb color="#ffffff"  size={40} className={styles.ico} />
-              <Postman color="#ffffff"  size={40} className={styles.ico} />
-              <Json color="#ffffff"  size={40} className={styles.ico} />
-            </div>
-          </div>
-          <div className={styles.skillset} >
-            <div className={styles.skills} >
-              <ReactJs color="#ffffff"  size={40} className={styles.ico} />
-              <Nextdotjs color="#ffffff"  size={40} className={styles.ico} />
-              <Django color="#ffffff"  size={40} className={styles.ico} />
-              <Nodedotjs color="#ffffff"  size={40} className={styles.ico} />
-            </div>
-          </div>
-          <div className={styles.skillset} >
-            <div className={styles.skills} >
-              <Vercel color="#ffffff"  size={40} className={styles.ico} />
-              <Firebase color="#ffffff"  size={40} className={styles.ico} />
-              <Git color="#ffffff"  size={40} className={styles.ico} />
-              <Heroku color="#ffffff"  size={40} className={styles.ico} />
-              <Netlify color="#ffffff"  size={40} className={styles.ico} />
-              <Github color="#ffffff"  size={40} className={styles.ico} />
-            </div>
-          </div>
-          <div className={styles.skillset} >
-            <div className={styles.skills} >
-              <Wordpress color="#ffffff"  size={40} className={styles.ico} />
-              <Wix color="#ffffff"  size={40} className={styles.ico} />
-              <Figma color="#ffffff"  size={40} className={styles.ico} />
-              <Shopify color="#ffffff"  size={40} className={styles.ico} />
-              <Blogger color="#ffffff"  size={40} className={styles.ico} />
-              <Visualstudiocode color="#ffffff"  size={40} className={styles.ico} />
-            </div>
-          </div>
-          <div className={styles.skillset} >
-            <div className={styles.skills} >
-              <Tableau color="#ffffff"  size={40} className={styles.ico} />
-              <Linux color="#ffffff"  size={40} className={styles.ico} />
-  
-            </div>
-          </div>
-          
-
-
-        </div>
-        
-    </div> 
-    
+      </div>
   )
 }
-
 export default Exp;
 
 
