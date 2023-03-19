@@ -1,6 +1,7 @@
-import React from 'react'
 
-const Database =  {
+
+const Database = () => {
+    const Database =   {
     
         //Navbar Section
         webName : "<WhosArghya/>",
@@ -108,7 +109,8 @@ const Database =  {
             }
         ]
     }
-
+  return (Database)
+}
 
 export default Database;
 
