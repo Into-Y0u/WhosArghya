@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import db from "../../Database.js";
 import styles from '../../styles/Exp.module.css';
+import ExpComp from './ExpComp.jsx';
 
 const Exp = () => {
   const [cur1, setCur1] = useState(false);
@@ -18,37 +19,7 @@ const Exp = () => {
       <div className={styles.container}>
           {
             db.exps.map((ele) => (
-              <div className={styles.company}>
-                <div  className={styles.element}>
-                  <div className={styles.intro} >
-                    <div className={styles.imgBunch} >
-                      <img src={ele.compImg} alt={ele.compImgAlt} />
-                    </div>
-
-                    <div className={styles.titleBunch}   >
-                      <h2 className={styles.compTitle}>{ele.compName}</h2>
-                      <div className={styles.child}>
-                        <div className={styles.compRole}>{ele.compPlace}</div>
-                        <div className={styles.compRole}>{ele.compTimeLine}</div>
-                      </div>
-                      <h3 className={styles.compRole2}>{ele.compRole}</h3>
-                    </div>
-
-                  </div>
-
-                  <div className={styles.description}  >
-                    <p className={styles.compPara}>{ele.compIntroPara}</p>
-                    <div className={cur1 ? styles.butList : styles.butListRev}>
-                      <button onClick={handleToggle1} className={styles.but} >{cur1 ? "Show Less" : "Show More"}</button>
-                      <ul className={cur1 ? styles.moreTrue : styles.moreFalse}  >
-                        {ele.compPara.map((arrEle) => (
-                          <li>{arrEle}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <ExpComp key={ele.id} ele={ele} />
             ))
           }
       </div>

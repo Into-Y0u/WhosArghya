@@ -5,22 +5,27 @@ export default {
 
     NavbarLinks : [
         {
+            id : 1,
             path : "/",
             name : "Home"
         },
         {
+            id : 2,
             path : "/apod",
             name : "APOD"
         },
         {
+            id : 3,
             path : "/exps",
             name : "Exps"
         },
         {
+            id : 3,
             path : "/skills",
             name : "Skills"
         },
         {
+            id : 4,
             path : "/projects",
             name : "Projects"
         },

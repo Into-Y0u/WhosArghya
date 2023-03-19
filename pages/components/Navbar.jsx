@@ -1,6 +1,7 @@
 import Link from "next/link";
 import db from "../../Database.js";
 import styles from "../../styles/Navbar.module.css";
+import NavbarLink from "./NavbarLink.jsx";
 
 
 const Navbar = () => {
@@ -19,9 +20,7 @@ const Navbar = () => {
       <div className={styles.item}>
         <div className={styles.list}>
           { db.NavbarLinks.map((ele) => (
-            <li className={styles.listItem} >
-              <Link href={ele.path}  passHref>{ele.name}</Link>
-            </li>
+            <NavbarLink key={ele.id} ele={ele}  />
           ))}
         </div>
       </div>
