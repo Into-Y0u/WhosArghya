@@ -1,7 +1,6 @@
-import styles from '../../styles/Exp.module.css'
-
-
 import {useState} from 'react';
+import db from "../../Database.js";
+import styles from '../../styles/Exp.module.css';
 
 const Exp = () => {
   const [cur1, setCur1] = useState(false);
@@ -17,97 +16,41 @@ const Exp = () => {
 
   return (
       <div className={styles.container}>
-          <div className={styles.left}>
-  {/* Company details  */}
-            <div  className={styles.element}>
+          {
+            db.exps.map((ele) => (
+              <div className={styles.company}>
+                <div  className={styles.element}>
+                  <div className={styles.intro} >
+                    <div className={styles.imgBunch} >
+                      <img src={ele.compImg} alt={ele.compImgAlt} />
+                    </div>
 
-              <div className={styles.intro} >
-                <div className={styles.imgBunch} >
-                  <img src="content/zoho.png" alt="gu" />
-                </div>
+                    <div className={styles.titleBunch}   >
+                      <h2 className={styles.compTitle}>{ele.compName}</h2>
+                      <div className={styles.child}>
+                        <div className={styles.compRole}>{ele.compPlace}</div>
+                        <div className={styles.compRole}>{ele.compTimeLine}</div>
+                      </div>
+                      <h3 className={styles.compRole2}>{ele.compRole}</h3>
+                    </div>
 
-                <div className={styles.titleBunch}   >
-                  <h2 className={styles.compTitle}>Zoho Corporation Pvt. Ltd.</h2>
-                  <div className={styles.child}>
-                    <div className={styles.compRole}>Chennai, In</div>
-                    <div className={styles.compRole}>Aug 2022 - Present</div>
                   </div>
-                  <h3 className={styles.compRole2}>Member Technical Staff (Backend Dev)</h3>
-                </div>
 
-              </div>
-
-              <div className={styles.description}  >
-                <p className={styles.compPara}>Technologies : Core Java, Struts 2 and Backend Operations ; Team - Zoho Video Platform. 
-                </p>
-                <div className={cur1 ? styles.butList : styles.butListRev}>
-                  <button onClick={handleToggle1} className={styles.but} >{cur1 ? "Show Less" : "Show More"}</button>
-                  <ul className={cur1 ? styles.moreTrue : styles.moreFalse}  >
-                    <li>
-                    Wrote and Integrated 5 new APIs to implement the newest feature “Waiting Room” in the
-conference that accepts requests from the joiners and notify host/co host to join in ; Handles
-them on the server end and executes DB operations as per use cases .
-                    </li>
-                    <li>
-                    Fixed issue of pre-call making anomaly and improved unauthorized call detection system,
-speeded up the reaction 90% faster.
-                    </li>
-                    <li>
-                    Designed and developed an API for the service team to fetch the details of all participants of an
-ongoing or any previously occurred conference.
-                    </li>
-                    <li>
-                    Improved system to delete "unnecessary" data from DB periodically to free up the load and
-optimize the space .
-                    </li>
-                  </ul>
-
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className={styles.right} >
-            <div  className={styles.element}>
-
-              <div className={styles.intro} >
-                <div className={styles.imgBunch} >
-                  <img src="content/3.png" alt="gu" />
-                </div>
-
-                <div className={styles.titleBunch}   >
-                  <h2 className={styles.compTitle}>Cognizant</h2>
-                  <div className={styles.child}>
-                    <div className={styles.compRole}>Kolkata, In</div>
-                    <div className={styles.compRole}>Feb 2022 - May 2022</div>
+                  <div className={styles.description}  >
+                    <p className={styles.compPara}>{ele.compIntroPara}</p>
+                    <div className={cur1 ? styles.butList : styles.butListRev}>
+                      <button onClick={handleToggle1} className={styles.but} >{cur1 ? "Show Less" : "Show More"}</button>
+                      <ul className={cur1 ? styles.moreTrue : styles.moreFalse}  >
+                        {ele.compPara.map((arrEle) => (
+                          <li>{arrEle}</li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
-                  <h3 className={styles.compRole2}>PAT Intern (Database Vis & Normalization)</h3>
-                </div>
-
-              </div>
-
-              <div className={styles.description} >
-                <p className={styles.compPara}>
-                  Worked as an Intern under the offer of Programming Analyst Traniee.
-                </p>
-                <div className={cur2 ? styles.butList : styles.butListRev}>
-                  <button onClick={handleToggle2} className={styles.but} >{cur2 ? "Show Less" : "Show More"}</button>
-                  <ul className={cur2 ? styles.moreTrue : styles.moreFalse}  >
-                    <li>
-                    Domain : Database Visualization and Normalization (Cohort Topper : ICT score : 88% and descent
-confederate with elocution).
-                    </li>
-                    <li>
-                    Trained on Database Management System , Data Modeling ; Tech Stack learnt : MySql, Data
-Analysis and Visualization tools : QlikView, Tableau.
-                    </li>
-                  </ul>
-
                 </div>
               </div>
-            </div>
-
-          </div>
+            ))
+          }
       </div>
   )
 }

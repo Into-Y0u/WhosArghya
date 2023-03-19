@@ -1,5 +1,4 @@
 .container {
-    /* width: 80%; */
     margin: 2% 10%;
     display: flex;
     flex-direction: row;
@@ -8,16 +7,13 @@
 }
 
   
-.left {
+.company {
     height: auto;
     width: 50%;
     display: flex;
     flex-direction: column;
     margin-right: 10px;
-    /* margin-left: 10px; */
-  
 }
-
 
 .child{
     /* align-self: flex-start; */
@@ -34,6 +30,8 @@
     color: azure;
     align-self: flex-start;
     padding: 5px 0;
+    font-family: 'Cinzel Decorative', cursive;
+
 }
 
 .compRole{
@@ -50,9 +48,11 @@
 }
 
 .compRole2{
-    font-size: 18px;
+    font-size: 15px;
     color: white;
-    margin: 0;
+    margin: 10px 0;
+    font-family: 'Cinzel Decorative', cursive;
+
 }
 
 .compPara {
@@ -61,6 +61,7 @@
     align-items: flex-start;
     margin-top: 0;
     padding-top: 0;
+    line-height: 22px;
 }
   
 .element{
@@ -143,15 +144,6 @@
     /* border: 2px solid white; */
 }
 
-.right{
-    height: auto;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-    /* border: 1px solid white; */
-}
-
 
 @media screen and (max-width:640px) {
     .container {
@@ -170,15 +162,11 @@
         width: 100%;
     }
 
-    .left  {
+    .company  {
         width: 100%;
         margin-bottom: 8vh;
     }
-    .right{
-        width: 100%;
-        margin-left: 0;
-
-    }
+    
     .compRole{
         margin-right: 0px;
     }

@@ -1,6 +1,7 @@
 import styles from '../../styles/Project.module.css'
 import {  Arduino, C, CssThree, Django,  Firebase, Firefox, Github,  Html5, Javascript, Materialui,  Netlify, Nextdotjs, Python, ReactJs, Stripe, Themoviedatabase, Vercel, Wordpress } from "@icons-pack/react-simple-icons";
 import Link from 'next/link';
+import db from "../../Database.js";
 
 
 const Projects = () => {

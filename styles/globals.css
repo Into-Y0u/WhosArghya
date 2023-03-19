@@ -1,17 +1,14 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&family=Satisfy&family=Viga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,800;1,100;1,200;1,300;1,400;1,500;1,700&display=swap');
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Viga', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color:#333333;
   background-attachment: fixed;
   background-size: cover;
   scroll-behavior: smooth;
-  
-
 }
 
 a {

@@ -31,24 +31,30 @@ const APOD = () => {
   },[]);
   // localStorage.clear();
 	return (
-		<div className={styles.container}>
-      <div className={styles.left}>
-        <img src={pic} alt="Pic Not Generated" />
+    <div className={styles.main}>
+      <div className={styles.container}>
+        <h1 className={styles.containerTitle}>NASA APOD</h1>
       </div>
 
-      <div className={styles.right}>
-        <h1>{title}</h1>
-        <h3>{date}</h3>
-        <p>{desc}</p>
+      <div className={styles.container}>
+        <div className={styles.left}>
+          <img src={pic} alt="Pic Not Generated" />
+        </div>
 
-        <button>
-          <Link href={pic}  passHref>
-                <a target="_blank">Full Size Image</a>
-          </Link>
-          
-        </button>
+        <div className={styles.right}>
+          <h1>{title}</h1>
+          <h3>-{date}-</h3>
+          <p>{desc}</p>
+
+          <button>
+            <Link href={pic}  passHref>
+                  <a target="_blank">Full Size Image</a>
+            </Link>
+            
+          </button>
+        </div>
       </div>
-		</div>
+    </div>
 	);
 }    
 

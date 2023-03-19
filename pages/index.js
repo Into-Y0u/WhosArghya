@@ -11,9 +11,6 @@ export default function Home() {
   return (
       <>
         <Frontpage/>
-        <div className={styles.gap} >
-          NASA APOD
-        </div>
         <APOD/>
         <div className={styles.gap} >
           Experience

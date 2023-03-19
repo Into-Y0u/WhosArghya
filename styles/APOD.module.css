@@ -1,7 +1,11 @@
+.main{
+    margin : 20vh 0;
+}
+
 .container {
     height: auto;
     /* width: 80%; */
-    padding: 20px;
+    padding: 10px;
     margin: 2% 10%;
     background: linear-gradient(145deg, #2e2e2e, #373737);
     box-shadow:  35px 35px 70px #161616,
@@ -12,13 +16,18 @@
   
 }
 
+.containerTitle{
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0 20px;
+    font-size: 40px;
+    font-weight: 600;
+
+}
+
+
 .left {
     width: 50%;
-    padding: 10px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    border: 5px solid white;
     margin: 20px;
     transition: transform .2s;
 }
@@ -30,6 +39,11 @@
 
 .left img{
     width: 100%;
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    border: 5px solid white;
+    
 }
 
 .right{
@@ -40,35 +54,58 @@
 
 .right h1{
     color: white;
+    margin-top: 0;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Cinzel Decorative', cursive;
+
 }
 
 .right h3{
     color: white;
+    margin-top: 0;
+    font-size: 12px;
+    justify-content: flex-end;
+    font-weight: 150;
+    font-style: italic;
 }
 
 .right p{
     color: white;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
 }
 
 .right button{
     margin-top: 50px;
     height: 50px;
-    
+    padding: 0;
     width: auto;
 }
 
 .right button a {
     padding: 10px;
     margin: 20px;
+    font-size: 15px;
+    font-weight: 300;
 }
 
 @media screen and (max-width:640px) {
+    .main{
+        margin : 20vh 0; 
+    }
     .container {
         display: flex;
         flex-direction: column;
         margin:1% 5%;
         padding: 10px;
     }
+    .containerTitle{
+        font-size: 35px;
+        font-weight: 500;
+    }
+
     .left{
         width: 100%;
         margin: 0;
@@ -79,8 +116,10 @@
         width: 100%;
     }
 
+
     .right h1{
         margin: 4px
     }
+
     
 }
