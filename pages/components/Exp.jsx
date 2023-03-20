@@ -74,9 +74,9 @@ const Exp = () => {
 
                 <div className={styles.description}  >
                 <p className={styles.compPara}>Worked as an Intern under the offer of Programming Analyst Traniee.</p>
-                <div className={cur1 ? styles.butList : styles.butListRev}>
-                    <button onClick={handleToggle1} className={styles.but} >{cur1 ? "Show Less" : "Show More"}</button>
-                    <ul className={cur1 ? styles.moreTrue : styles.moreFalse}  >
+                <div className={cur2 ? styles.butList : styles.butListRev}>
+                    <button onClick={handleToggle2} className={styles.but} >{cur2 ? "Show Less" : "Show More"}</button>
+                    <ul className={cur2 ? styles.moreTrue : styles.moreFalse}  >
                       <li>Domain : Database Visualization and Normalization (Cohort Topper : ICT score : 88% and descent confederate with elocution).</li>
                       <li>
                       Trained on Database Management System , Data Modeling ; Tech Stack learnt : MySql, Data Analysis and Visualization tools : QlikView, Tableau.

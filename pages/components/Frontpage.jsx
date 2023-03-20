@@ -29,23 +29,23 @@ const Frontpage = () => {
           <p>{db.intro.connect}</p> 
           <ul className={styles.list}>
             <li>
-              <Link href="https://boat-clone-eta.vercel.app/" passHref>
-                <a href="" target="_blank">
-                  <Linkedin color="#ffffff"  size={20} className={styles.ico}/>
+              <Link href="https://www.linkedin.com/in/arghyadev-sarkar/" passHref>
+                <a href="https://www.linkedin.com/in/arghyadev-sarkar/" target="_blank">
+                  <Linkedin color="#ffffff"  size={25} className={styles.ico}/>
                 </a>
               </Link>
             </li>
             <li>
-              <Link href="https://boat-clone-eta.vercel.app/" passHref>
-                <a href="" target="_blank">
-                  <Twitter color="#ffffff"  size={20} className={styles.ico}/>
+              <Link href="https://twitter.com/WhosArghya" passHref>
+                <a href="https://twitter.com/WhosArghya" target="_blank">
+                  <Twitter color="#ffffff"  size={25} className={styles.ico}/>
                 </a>
               </Link>
             </li>
             <li>
-              <Link href="https://boat-clone-eta.vercel.app/" passHref>
-                <a href="" target="_blank">
-                  <Gmail color="#ffffff"  size={20} className={styles.ico}/>
+              <Link href="mailto:7arghyadev@gmail.com" passHref>
+                <a href="mailto:7arghyadev@gmail.com" target="_blank">
+                  <Gmail color="#ffffff"  size={25} className={styles.ico}/>
                 </a>
               </Link>
             </li>

@@ -56,12 +56,13 @@
 }
 
 .compPara {
-    font-size: 17px;
+    font-size: 15px;
     color: azure;
     align-items: flex-start;
     margin-top: 0;
     padding-top: 0;
     line-height: 22px;
+    font-weight: 350;
 }
   
 .element{
@@ -175,6 +176,10 @@
     }
     .compRole{
         font-size: 12px;
+    }
+
+    .description{
+        padding: 0;
     }
     .compPara{
         font-size: 15;

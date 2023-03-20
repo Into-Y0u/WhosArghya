@@ -19,7 +19,7 @@ const APOD = () => {
       setTitle(fetchedData.title);
       setDesc(fetchedData.explanation);
       if(fetchedData.media_type === "video"){
-        setPic(fetchedData.url);
+        setPic("content/noImg.png");
       }
       else{
         setPic(fetchedData.hdurl);
@@ -53,7 +53,7 @@ const APOD = () => {
 
           <button>
             <Link href={pic}  passHref>
-                  <a target="_blank">Full Size Image</a>
+                  <a target="_blank">Watch Full Size</a>
             </Link>
             
           </button>

@@ -1,7 +1,7 @@
 import styles from "../../styles/Footer.module.css"
 import { useRouter } from "next/router";
 import Link from "next/link";
-import { Codeforces, Github, Gmail, Hackerrank, Leetcode, Linkedin, Medium, Twitter } from "@icons-pack/react-simple-icons";
+import { Codeforces, Geeksforgeeks, Github, Gmail, Hackerrank, Leetcode, Linkedin, Medium, Twitter } from "@icons-pack/react-simple-icons";
 
 const Footer = () => {
   const router = useRouter();
@@ -9,22 +9,22 @@ const Footer = () => {
     <div className={styles.container}>
       <div className={styles.list}>
         <li>
-          <Link href="https://boat-clone-eta.vercel.app/" passHref>
-            <a href="google.com" target="_blank">
+          <Link href="https://www.linkedin.com/in/arghyadev-sarkar/" passHref>
+            <a href="https://www.linkedin.com/in/arghyadev-sarkar/" target="_blank">
               <Linkedin color="#00ffff"  size={30} className={styles.ico}/>
             </a>
           </Link>
         </li>
         <li>
-          <Link href="https://boat-clone-eta.vercel.app/" passHref>
-            <a href="google.com" target="_blank">
+          <Link href="https://twitter.com/WhosArghya" passHref>
+            <a href="https://twitter.com/WhosArghya" target="_blank">
               <Twitter color="#00ffff"  size={30} className={styles.ico}/>
             </a>
           </Link>
         </li>
         <li>
-          <Link href="https://boat-clone-eta.vercel.app/" passHref>
-            <a href="google.com" target="_blank">
+          <Link href="https://github.com/Into-Y0u" passHref>
+            <a href="https://github.com/Into-Y0u" target="_blank">
               <Github color="#00ffff"  size={30} className={styles.ico}/>
             </a>
           </Link>
@@ -39,20 +39,20 @@ const Footer = () => {
         <li>
           <Link href="https://boat-clone-eta.vercel.app/" passHref>
             <a href="google.com" target="_blank">
-              <Codeforces color="#00ffff"  size={30} className={styles.ico}/>
+              <Geeksforgeeks color="#00ffff"  size={30} className={styles.ico}/>
             </a>
           </Link>
         </li>
         <li>
-          <Link href="https://boat-clone-eta.vercel.app/" passHref>
-            <a href="google.com" target="_blank">
+          <Link href="mailto:7arghyadev@gmail.com" passHref>
+            <a href="mailto:7arghyadev@gmail.com" target="_blank">
               <Gmail color="#00ffff"  size={30} className={styles.ico}/>
             </a>
           </Link>
         </li>
         <li>
-          <Link href="https://boat-clone-eta.vercel.app/" passHref>
-            <a href="google.com" target="_blank">
+          <Link href="https://leetcode.com/Into_You/" passHref>
+            <a href="https://leetcode.com/Into_You/" target="_blank">
               <Leetcode color="#00ffff"  size={30} className={styles.ico}/>
             </a>
           </Link>
