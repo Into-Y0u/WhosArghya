@@ -1,14 +1,13 @@
 import Link from "next/link";
-import db from "../../Database.js";
 import styles from "../../styles/Navbar.module.css";
-import NavbarLink from "./NavbarLink.jsx";
 
 
 const Navbar = () => {
-
+  const db = {
+    webName : "<WhosArghya/>",
+  }
   return (
     <div className={styles.container}>
-
       <div className={styles.item}>
         <div>
           <Link href="/" passHref>
@@ -19,9 +18,22 @@ const Navbar = () => {
 
       <div className={styles.item}>
         <div className={styles.list}>
-          { db.NavbarLinks.map((ele) => (
-            <NavbarLink key={ele.id} ele={ele}  />
-          ))}
+          <li className={styles.listItem} >
+              <Link href="/"  passHref>Home</Link>
+          </li>
+
+          <li className={styles.listItem} >
+            <Link href="/apod"  passHref>APOD</Link>
+          </li>
+          <li className={styles.listItem} >
+              <Link href="/exps"  passHref>Exps</Link>
+          </li>
+          <li className={styles.listItem} >
+              <Link href="/skills"  passHref>Skills</Link>
+          </li>
+          <li className={styles.listItem} >
+              <Link href="/projects" passHref>Projects</Link>
+          </li>
         </div>
       </div>
 
