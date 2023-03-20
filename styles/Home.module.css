@@ -69,7 +69,7 @@
 
 .list{
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   list-style: none;
   color: #ffffff;
   align-items: center;
@@ -78,7 +78,7 @@
 
 .ico{
   transition: transform .2s;
-  margin: 0 5px;
+  margin: 0 10px;
 }
 
 .ico:hover{

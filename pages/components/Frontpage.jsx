@@ -1,9 +1,19 @@
 import styles from '../../styles/Home.module.css';
-import db from "../../Database.js";
 import Link from 'next/link';
-import { Codeforces, Github, Gmail, Hackerrank, Leetcode, Linkedin, Medium, Twitter } from "@icons-pack/react-simple-icons";
+import { Gmail, Linkedin,Twitter } from "@icons-pack/react-simple-icons";
 
 const Frontpage = () => {
+
+  const db = {
+    intro : {
+      hi : "Hi there!!!!",
+      introduction : "This's Arghya",
+      para1 : "    Currently working as a Member of Technical staff (Backend Developer) at Zoho Corporation Pvt. Ltd. I have completed my B.Tech on 2022.",
+      para2 : "    Technology excites me and I am always in awe of the change it drives in the world. Love to Collaborate and Learn new Techs and enhance skills",
+      connect : "Lets Connect.!🤝"
+  }
+  }
+
   return (
     <div className={styles.container}>
         <div className={styles.left}>

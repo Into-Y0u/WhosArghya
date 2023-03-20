@@ -5,7 +5,7 @@ import Link from 'next/link';
 import styles from '../../styles/APOD.module.css';
 
 const APOD = () => {
-  const [pic, setPic] = useState("");
+  const [pic, setPic] = useState("/");
   const [title, setTitle] = useState("")
   const [desc, setDesc] = useState("")
   const [date, setDate] = useState("");
@@ -16,9 +16,14 @@ const APOD = () => {
     .then((response) => {
       var fetchedData = response.data;
       setDate(fetchedData.date);
-      setPic(fetchedData.hdurl);
       setTitle(fetchedData.title);
       setDesc(fetchedData.explanation);
+      if(fetchedData.media_type === "video"){
+        setPic(fetchedData.url);
+      }
+      else{
+        setPic(fetchedData.hdurl);
+      }
     })
     .catch((err)=>{
       console.log(err);
@@ -38,7 +43,7 @@ const APOD = () => {
 
       <div className={styles.container}>
         <div className={styles.left}>
-          <img src={pic} alt="Pic Not Generated" />
+          <img src={pic} alt="Kindly Click the full size link given bottom right corner" />
         </div>
 
         <div className={styles.right}>
