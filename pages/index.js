@@ -12,17 +12,8 @@ export default function Home() {
       <>
         <Frontpage/>
         <APOD/>
-        <div className={styles.gap} >
-          Experience
-        </div>
         <Exp/>
-        <div className={styles.gap} style={{"marginTop":"10vh"}} >
-          Skills
-        </div>
         <Skills/>
-        <div className={styles.gap} >
-          Projects
-        </div>
         <Projects/>
     </>
   )

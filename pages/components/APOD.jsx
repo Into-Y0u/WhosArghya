@@ -38,7 +38,7 @@ const APOD = () => {
 	return (
     <div className={styles.main}>
       <div className={styles.container}>
-        <h1 className={styles.containerTitle}>NASA APOD</h1>
+        <h1 className={styles.containerTitle}>APOD</h1>
       </div>
 
       <div className={styles.container}>

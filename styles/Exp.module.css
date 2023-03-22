@@ -1,12 +1,37 @@
+.main{
+    margin : 40vh 0;
+}
+
+
+.container1 {
+    margin: 4% 10%;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    height: auto;
+    padding: 10px;
+    background: linear-gradient(145deg, #2e2e2e, #373737);
+    box-shadow:  35px 35px 70px #161616,
+                 -35px -35px 70px #505050;
+    overflow: hidden;
+}
+
+.containerTitle{
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0 20px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+
 .container {
     margin: 2% 10%;
     display: flex;
     flex-direction: row;
     cursor: pointer;
-
 }
 
-  
 .company {
     height: auto;
     width: 50%;
@@ -133,20 +158,26 @@
     flex-direction: column-reverse;
 }
 
-.element:hover{
-    
-}
 
 .moreFalse{
     display: none;
 }
 
-.moreTrue{
-    /* border: 2px solid white; */
-}
 
 
 @media screen and (max-width:640px) {
+    .main{
+        margin: 20vh 0;
+    }
+
+    .container1{
+        margin: 4% 5%;
+    }
+    .containerTitle{
+        font-size: 35px;
+        font-weight: 500;
+    }
+
     .container {
         flex-direction: column;
         width: 90%;

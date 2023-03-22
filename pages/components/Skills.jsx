@@ -4,6 +4,12 @@ import styles from '../../styles/Skills.module.css';
 
 const Skills = () => {
   return (
+    <div className={styles.main}>
+    <div className={styles.container1}>
+      <h1 className={styles.containerTitle}>Skills</h1>
+    </div>
+    
+    
     <div className={styles.container}>
       <div className={styles.left}>
         <div className={styles.skillset} >
@@ -73,6 +79,7 @@ const Skills = () => {
         <img src="content/giphy.gif" alt="" />
       </div>
     </div>
+  </div>
   )
 }
 
