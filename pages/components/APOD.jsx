@@ -9,6 +9,7 @@ const APOD = () => {
   const [title, setTitle] = useState("")
   const [desc, setDesc] = useState("")
   const [date, setDate] = useState("");
+  const [hdurl, setHdurl] = useState("");
 
 
 	const fetchData = async () => {	
@@ -22,7 +23,8 @@ const APOD = () => {
         setPic("content/noImg.png");
       }
       else{
-        setPic(fetchedData.hdurl);
+        setPic(fetchedData.url);
+        setHdurl(fetchedData.hdurl);
       }
     })
     .catch((err)=>{
@@ -52,7 +54,7 @@ const APOD = () => {
           <p>{desc}</p>
 
           <button>
-            <Link href={pic}  passHref>
+            <Link href={hdurl}  passHref>
                   <a target="_blank">Watch Full Size</a>
             </Link>
             
