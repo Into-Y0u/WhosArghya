@@ -30,15 +30,15 @@ const Footer = () => {
           </Link>
         </li>
         <li>
-          <Link href="https://boat-clone-eta.vercel.app/" passHref>
-            <a href="google.com" target="_blank">
+          <Link href="https://www.hackerrank.com/Into_You" passHref>
+            <a href="https://www.hackerrank.com/Into_You" target="_blank">
               <Hackerrank color="#00ffff"  size={30} className={styles.ico}/>
             </a>
           </Link>
         </li>
         <li>
-          <Link href="https://boat-clone-eta.vercel.app/" passHref>
-            <a href="google.com" target="_blank">
+          <Link href="https://auth.geeksforgeeks.org/user/7arghyadev" passHref>
+            <a href="https://auth.geeksforgeeks.org/user/7arghyadev" target="_blank">
               <Geeksforgeeks color="#00ffff"  size={30} className={styles.ico}/>
             </a>
           </Link>

@@ -14,6 +14,11 @@ const Exp = () => {
   }
 
   return (
+    <div className={styles.main}>
+      <div className={styles.container1}>
+        <h1 className={styles.containerTitle}>Experince</h1>
+      </div>
+
       <div className={styles.container}>
         <div className={styles.company}>
             <div  className={styles.element}>
@@ -87,6 +92,7 @@ const Exp = () => {
             </div>
         </div>
       </div>
+    </div>
   )
 }
 export default Exp;
