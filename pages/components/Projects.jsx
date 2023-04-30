@@ -4,10 +4,11 @@ import Link from 'next/link';
 
 
 const Projects = () => {
+  const pageTitle = "-Projects-"
   return (
     <div className={styles.main}>
     <div className={styles.container1}>
-      <h1 className={styles.containerTitle}>Projects</h1>
+      <h1 className={styles.containerTitle}>{pageTitle}</h1>
     </div>
     <div className={styles.container}>
         <div className={styles.left}>
