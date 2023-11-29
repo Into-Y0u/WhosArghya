@@ -91,6 +91,11 @@
     font-weight: 300;
 }
 
+.spotifyFrame {
+
+}
+
+
 @media screen and (max-width:640px) {
     .main{
         margin : 20vh 0; 

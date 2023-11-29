@@ -4,6 +4,7 @@ import Exp from './components/Exp';
 import Projects from './components/Projects';
 import APOD from './components/APOD';
 import styles from '../styles/Front.module.css';
+import Spotify from './components/Spotify';
 
 
 
@@ -15,6 +16,8 @@ export default function Home() {
         <Exp/>
         <Skills/>
         <Projects/>
+        <Spotify/>
+
     </>
   )
 }
